@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>大满罐计划</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="author" content="gaofei"/>
+<meta name="keywords" content="大满罐计划"/>
+<meta name="description" content="大满罐计划"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<meta name="formal-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta http-equiv="Page-Enter" content="RevealTrans(duration=5,Transitionv=19)"/>
+<meta name="screen-orientation" content="portrait"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait"/>
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait"/>
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes"/>
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true"/>
+<!-- UC应用模式 -->
+<meta name="browsermode" content="application"/>
+<!-- QQ应用模式 -->
+<meta name="x5-page-mode" content="app"/>
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no"/>
+<!-- 外部CSS -->
+<link rel="stylesheet" type="text/css" href="css/dmg/dmg.css"/>
+<!-- 适配框架 -->
+<script src="js/flexible.js"></script>
+</head>
+<body>
+<!-- 预加载处理 -->
+ <div class="yujjiazai" id="jiazai">
+   <div class="yujjiazai_f">
+      <img src="img/00.gif"/><br/>
+      页面加载中...
+   </div>
+ </div>
+ <!-- no huodong -->
+ <div class="dmg">
+   <div class="dmg-f">
+     <img src="img/dmg/dmg001.png"/>
+     <div class="dmg-f-f" onclick="location.href='lqg://app.com/gototouzi'">
+       <img src="img/dmg/dmgan.png"/>
+     </div>
+   </div>
+ </div>
+ <!-- huodong -->
+ <div class="dmgh">
+   <img src="img/dmg/dmg002.png"/>
+   <div class="dmgh-f goToJiLu"></div><!-- 预约记录 -->
+   <div class="dmgh-f dmgright" id="goToGuiZe"></div><!-- 活动规则 -->
+   <div class="dmgh-s">共计<span>18925</span>人预约</div>
+ </div>
+ <div class="dmgs">
+   <div class="dmgs-f xzbacground">
+     <img src="img/dmg/dmg005.png"/>
+     <div class="dmgs-f-f">
+       <div class="dmgs-f-f-f">
+         <img src="img/dmg/dmgdanz.png"/>
+         <input type="radio" name="biao" value="61.7808" checked="checked"/>
+         <input type="hidden" value="14.88%+2%" id="365"/>
+       </div>
+     </div>
+   </div>
+   <div class="dmgs-f">
+     <img src="img/dmg/dmg006.png"/>
+     <div class="dmgs-f-f">
+       <div class="dmgs-f-f-f">
+         <img src="img/dmg/dmgdan.png"/>
+         <input type="radio" name="biao" value="27.3792"/>
+         <input type="hidden" value="13.88%+1%" id="184"/>
+       </div>
+     </div>
+   </div>
+   <div class="dmgs-f">
+     <img src="img/dmg/dmg007.png"/>
+     <div class="dmgs-f-f">
+       <div class="dmgs-f-f-f">
+         <img src="img/dmg/dmgdan.png"/>
+         <input type="radio" name="biao" value="12.3096"/>
+         <input type="hidden" value="12.88%+0.5%" id="92"/>
+       </div>
+     </div>
+   </div>
+   <div class="dmgs-f">
+     <img src="img/dmg/dmg008.png"/>
+     <div class="dmgs-f-f">
+       <div class="dmgs-f-f-f">
+         <img src="img/dmg/dmgdan.png"/>
+         <input type="radio" name="biao" value="3.6828"/>
+         <input type="hidden" value="11.88%" id="31"/>
+       </div>
+     </div>
+   </div>
+   <!-- lqg ang zhouzhousheng -->
+   <div class="dmgs-s">
+     <div class="dmgs-s-f"><!-- zhouzhousheng -->
+       <div class="dmgs-s-f-f">
+         <img src="img/dmg/dmg009.png"/>
+         <div class="dmgs-s-f-f-f">
+           <img src="img/dmg/checkz.png"/>
+         </div>
+         <div class="dmgs-s-f-f-s">
+           <input type="checkbox" name="box" value="15800.34" checked="checked" id="zhouzhousheng"/>
+         </div>
+         <div class="dmgs-s-f-f-t">15800.34元</div>
+       </div>
+     </div>
+     <div class="dmgs-s-f lqgright"><!-- lqg -->
+       <div class="dmgs-s-f-f">
+         <img src="img/dmg/dmg010.png"/>
+         <div class="dmgs-s-f-f-f wucha">
+           <img src="img/dmg/checkz.png"/>
+         </div>
+         <div class="dmgs-s-f-f-s">
+           <input type="checkbox" name="box" value="800.00" checked="checked" id="lqg"/>
+         </div>
+         <div class="dmgs-s-f-f-t">800.00元</div>
+       </div>
+     </div>
+     <div class="dmgs-s-s">预计赚<span id="yueDeShou">18900.00</span>元</div>
+     <div class="dmgs-s-t">匹配成功后会将周周升或零钱宝全额投资到所选标的</div>
+    </div>
+ </div>
+ <div class="dmgbottom">
+   <div class="dmgbottom-f" id="appointment">
+     <img src="img/dmg/dmg004.png"/>
+   </div>
+ </div>
+ <!-- 预约详情 -->
+ <div class="tanxq" id="tanXqing">
+   <div class="tanxq-f">
+     <div class="tanxq-f-f">
+       <img src="img/dmg/guan01.png"/>
+     </div>
+     <div class="tanxq-f-s closedom"></div><!-- gunbi -->
+     <div class="tanxq-f-t">
+       <img src="img/dmg/dmg011.png"/>
+     </div>
+     <div class="tanxq-f-four">
+       <table>
+         <tr>
+           <td>周周升预约：&nbsp;</td>
+           <td><span id="xqZhoumoney">0.00</span>元</td>
+         </tr>
+         <tr>
+           <td>零钱宝预约：&nbsp;</td>
+           <td><span id="xqLqgmoney">0.00</span>元</td>
+         </tr>
+         <tr>
+           <td>预约产品：&nbsp;</td>
+           <td><span id="xqDay">36</span>天 <span id="xqLilv">1.88%+1.8%</span></td>
+         </tr>
+       </table>
+     </div>
+     <div class="tanxq-f-five">* 历史匹配周期为1~3天，以实际匹配为准。匹配
+前，利息按原投资收益发放。大满罐收益以实际
+成功匹配金额为准。</div>
+     <div class="tanxq-f-six">
+       <img src="img/dmg/dmg013.png"/>
+     </div>
+   </div>
+ </div>
+ <!-- 交易验证 -->
+ <div class="tanjiao">
+   <div class="tanjiao-f">
+     <div class="tanjiao-f-f">
+       <img src="img/dmg/guan01.png"/>
+     </div>
+     <div class="tanjiao-f-s closedom"></div><!-- gunbi -->
+     <div class="tanjiao-f-t">
+       <img src="img/dmg/dmg014.png"/>
+     </div>
+     <div class="tanjiao-f-four">
+       <div class="pwd-box">
+        <input type="tel" maxlength="6" class="pwd-input" id="pwd-input">
+        <div class="fake-box">
+          <input type="password" readonly="readonly"/>
+          <input type="password" readonly="readonly"/>
+          <input type="password" readonly="readonly"/>
+          <input type="password" readonly="readonly"/>
+          <input type="password" readonly="readonly"/>
+          <input type="password" readonly="readonly"/>
+        </div>
+       </div>
+     </div>
+     <div class="tanjiao-f-five">
+       输入交易密码
+     </div>
+     <div class="tanjiao-f-six">
+       <img src="img/dmg/dmg013.png"/>
+     </div>
+     <div class="tanjiao-f-senve">
+       <i><img src="img/dmg/dmg016.png"/><img src="img/dmg/dmg016che.png" class="xieyicheck"/><input type="checkbox" name="xieyi" checked="checked" class="xieyifuxuan"/></i><span id="goTodxieYi">大满罐授权预约协议</span>
+     </div>
+   </div>
+ </div>
+ <div class="tansuccess">
+   <div class="tansuccess-f">
+     <div class="tansuccess-f-f">
+       <img src="img/dmg/guan02.png"/>
+     </div>
+     <div class="tansuccess-f-s">
+       <img src="img/dmg/dmg017.png"/>
+     </div>
+     <div class="tansuccess-f-t">
+       <img src="img/dmg/dmg018.png"/>
+     </div>
+     <div class="tansuccess-f-four">
+       可在<span class="goToJiLu">预约记录</span>中查看
+     </div>
+   </div>
+ </div>
+ <div class="tanerror">
+   <div class="tanerror-f">密码错误的</div>
+ </div>
+ <!-- 活动规则 -->
+ <div class="tanguize">
+   <div class="tanguize-f">
+     <div class="tanguize-f-f">
+       <img src="img/dmg/guan01.png"/>
+     </div>
+     <div class="tanguize-f-s closedom"></div>
+     <div class="tanguize-f-t">
+       <img src="img/dmg/dmg019.png"/>
+     </div>
+     <div class="tanguize-f-four">
+       1.活动时间：2018年4月10日00:00至4月30日23:59:59<br/>
+2.本活动加息仅限从“零钱宝”、“周周升”的资金进行投资，
+加息天数为所选标的期限的天数，从可用余额进行投资不
+享受活动加息特权；<br/>
+3.预约成功后，用户不能对已预约的“零钱宝”、“周周升”
+资金进行提现、投标、退出等操作，可在预约记录进行修
+改与撤销操作，撤销后可重复预约，匹配成功后不得进行
+修改与撤销；<br/>
+4.匹配成功前，计息方式按照预约前投资的项目付息；
+匹配成功后，以实际匹配的金额为准，用户可在“我-我的
+投资”查看记录；<br/>
+5.用户可24小时进行预约，系统每天匹配1次，当天预约
+成功将在次日上午06:00-07:00进行匹配，选择从“周周
+升”的资金进行投资将优先匹配；<br/>
+6.本活动不与“零钱罐两周年”、“邀请第五季”活动同享，
+如有疑问请联系在线客服（客服工作时间：9:00-18:00)。
+*如部分手机（如中兴、华为等）因适配或缓存问题导致
+无法正常参加活动，零钱罐不承担任何责任。<br/><br/>
+*法律允许范围内，零钱罐对本次活动享有最终解权。
+     </div>
+   </div>
+ </div>
+ <!-- 授权书 -->
+ <div class="shouquan">
+   <div class="shouquan-f">
+     <div class="shouquan-f-f">
+       <img src="img/dmg/guan01.png"/>
+     </div>
+     <div class="shouquan-f-s closedom"></div>
+     <div class="shouquan-f-t">
+       <img src="img/dmg/dmg020.png"/>
+     </div>
+     <div class="shouquan-f-four">
+       <p>委托人：</p>
+       <p>身份证号：</p>
+       <p>联系方式：</p>
+       <p>受托人：深圳市稳通金融服务有限公司
+          （以下简称“稳通金融”）</p>
+        <p>统一社会信用代码: 91440300326556084E</p>
+        <p>住所: 深圳市南山区海德三道195号天利中央广场B座1801</p>
+        鉴于委托人为在稳通金融运营的“零钱罐App”上实名注册
+的用户，现拟参与稳通金融运营的零钱罐App"大满贯预约
+投标"功能，为优化委托人的用户体验，委托人就"大满贯
+预约投标"的相关投标标的范围、资金划转、退出等相关
+事项向受托人做出如下授权：<br/>
+<span>一、大满贯预约投标定义</span><br/>
+本委托授权书中所指的"大满贯预约投标"为委托人委托受
+托人在其选择的投资标的、类型、利率、期限、还款方式
+等范围内，选择平台标的行为。用户预约后至匹配前，可
+进行撤销操作，一旦投标成功，即表示委托人受标的合同
+及有关规则等约束。<br/>
+<span>二、授权范围</span><br/>
+（一）代委托人在稳通金融平台上点击确认投标、出借资
+金、签署借款等业务流程中的全部操作及协议。<br/>
+（二）代委托人进行划转出借资金、收回借款本息款项等
+业务流程中涉及的资金管理行为。<br/>
+<span>三、授权出借信息</span><br/>
+（一）授权出借的账户<br/>
+委托人平台账号：{委托人在零钱罐登录账号}<br/>
+（二）授权出借的金额：以委托人自行选择资金来源为准。<br/>
+（三）授权期限：以委托人自行选择投标的期限为准。
+     </div>
+   </div>
+ </div>
+</body>
+<!-- 外部jskuangjia -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script>
+ ;(function($,window,document,undefined){
+    $(function(){
+    //var uid = '${uid}';
+    $.extend({'countSum':function(){//计算收益
+               var rafioValue = $('input:radio[name="biao"]:checked').val();
+                var lilvValue = $('input:radio[name="biao"]:checked').next().val();
+                var lilvDay = $('input:radio[name="biao"]:checked').next().attr('id');
+                $("#xqDay").text(lilvDay);
+                $("#xqLilv").text(lilvValue);
+                console.log("利率："+lilvValue);
+                console.log("天数："+lilvDay);
+               console.log("radio="+rafioValue);
+               var checkboxValueSum = 0; 
+               $('input[name="box"]:checked').each(function(){ 
+                  checkboxValueSum += parseFloat($(this).val()); 
+                }); 
+               console.log("checkboxValueSum="+checkboxValueSum);
+               var valueSum =  rafioValue * checkboxValueSum / 365;
+               $("#yueDeShou").text(valueSum.toFixed(2));
+               $('input[name="box"]').each(function(){  
+                  // $("#xqLqgmoney").text("0.00");
+                  // $("#xqZhoumoney").text("0.00");
+                  if($(this).is(":checked")){
+                    console.log("this id ==" + $(this).attr('id')); 
+                     if($(this).attr('id') == "lqg"){
+                       $("#xqLqgmoney").text($(this).val());
+                     }else{
+                       $("#xqZhoumoney").text($(this).val());
+                     }        
+                  }else{
+                     if($(this).attr('id') == "lqg"){
+                       $("#xqLqgmoney").text("0.00");
+                     }else{
+                       $("#xqZhoumoney").text("0.00");
+                     }  
+                  }
+               });
+            },
+            'checkPassword':function(){
+               var passwordValue = $("#pwd-input").val().trim();
+               var reg = /^\d{6}$/;//tanerror-f
+               if(passwordValue.length != 6){
+                  $(".tanerror-f").text("密码格式不正确");
+                  $(".tanerror").fadeIn(300,function(){
+                     setTimeout(function(){
+                         $(".tanerror").fadeOut(300); 
+                     },3000);
+                  });
+                  return false;
+               }else if(!reg.test(passwordValue)){      
+                  $(".tanerror-f").text("密码格式不正确,密码由6位数字组成");
+                  $(".tanerror").fadeIn(300,function(){
+                     setTimeout(function(){
+                         $(".tanerror").fadeOut(300); 
+                     },3000);
+                  });
+                  return false;   
+               }else{
+                 return true;
+               }  
+            },
+           'refresh':function(){
+             window.location.reload();//刷新当前页面
+           }
+        });
+    // 单选 事件
+    $("input[type=radio]").change(function(){ 
+      if($(this).attr("checked")){
+       
+        $(this).prev("img").prop("src","img/dmg/dmgdanz.png");
+        $(this).parent().parent().parent().siblings().children().children(".dmgs-f-f-f").children("img").prop("src","img/dmg/dmgdan.png");
+        $(this).parent().parent().parent(".dmgs-f").addClass("xzbacground");
+        $(this).parent().parent().parent(".dmgs-f").siblings().removeClass("xzbacground");
+      }  
+      $.countSum();
+    });
+    // 复选 事件
+     $('input[name="box"]').on('change', function(){ 
+                if($(this).attr('checked')) {
+                  $(this).parent().prev().fadeIn(30);
+                  console.log("选中了");
+                  }else{
+                  $(this).parent().prev().fadeOut(30);
+                  console.log("取消了");
+                }
+                $.countSum();
+            });
+     // 协议 复选 事件
+     $('input[name="xieyi"]').on('change', function(){ 
+                if($(this).attr('checked')) {
+                  $(this).prev().fadeIn(30);
+                  console.log("选中了");
+                  }else{
+                  $(this).prev().fadeOut(30);
+                  console.log("取消了");
+                }
+            });
+     $("#appointment").click(function(){
+        $.countSum();
+        $("#tanXqing").fadeIn(300);
+     });
+     $(".closedom").click(function(){
+        $(this).parent().parent().fadeOut(300);
+     });
+     $(".tanxq-f-six").click(function(){
+       $(this).parent().parent().fadeOut(300);
+       $(".tanjiao").fadeIn(300);
+     });
+     // password 
+     var $input = $(".fake-box input");
+      $("#pwd-input").on("input", function() {
+        var pwd = $(this).val().trim();
+        for (var i = 0, len = pwd.length; i < len; i++) {
+          $input.eq("" + i + "").val(pwd[i]);
+        }
+        $input.each(function() {
+          var index = $(this).index();
+          if (index >= len) {
+            $(this).val("");
+          }
+        });
+        if (len == 6) {
+          //执行其他操作
+          console.log($(this).val());
+        }
+      });
+      //mima验证 按钮
+      $(".tanjiao-f-six").click(function(){
+       // $.checkPassword();
+        if(!$.checkPassword()){
+            return false;
+        }
+        if($('input[name="xieyi"]').attr('checked')){
+          console.log("走吧");
+          $(this).parent().parent().fadeOut(300);
+          $(".tansuccess").fadeIn(300);
+        }else{
+          $(".tanerror-f").text("请仔细详读大满贯协议");
+                  $(".tanerror").fadeIn(300,function(){
+                     setTimeout(function(){
+                         $(".tanerror").fadeOut(300); 
+                     },3000);
+                  });
+                return false;
+        }
+      });
+      $(".tansuccess-f-t").click(function(){
+         $.refresh();
+         $(this).parent().parent().fadeOut(300);
+      });
+      // gtoto guize
+      $("#goToGuiZe").click(function(){
+        $(".tanguize").fadeIn(300);
+      });
+      //goto damanguanxieyi
+      $("#goTodxieYi").click(function(){
+        $(".shouquan").fadeIn(300);
+      });
+      $(".goToJiLu").click(function(){
+         window.location.href = 'jilu.html';
+      });
+    $.countSum();
+  });
+})(jQuery,window,document);
+
+ document.onreadystatechange = subSomething;//当页面加载状态改变的时候执行这个方法.
+ function subSomething() {
+  if(document.readyState=="complete"){
+   //alert("当前页面已加载完成！");
+   var a = document.getElementById("jiazai"); //当页面加载完成后获得该元素对象
+   a.style.display = "none"; 
+  }
+} 
+</script>
+</html>

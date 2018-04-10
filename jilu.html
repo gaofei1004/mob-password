@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>大满罐计划</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="author" content="gaofei"/>
+<meta name="keywords" content="大满罐计划"/>
+<meta name="description" content="大满罐计划"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<meta name="formal-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta http-equiv="Page-Enter" content="RevealTrans(duration=5,Transitionv=19)"/>
+<meta name="screen-orientation" content="portrait"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait"/>
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait"/>
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes"/>
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true"/>
+<!-- UC应用模式 -->
+<meta name="browsermode" content="application"/>
+<!-- QQ应用模式 -->
+<meta name="x5-page-mode" content="app"/>
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no"/>
+<!-- 外部CSS -->
+<link rel="stylesheet" type="text/css" href="css/dmg/dmg.css"/>
+<!-- 适配框架 -->
+<script src="js/flexible.js"></script>
+</head>
+<body style="background-color:#f6f7fb;">
+<!-- 预加载处理 -->
+ <div class="yujjiazai" id="jiazai">
+   <div class="yujjiazai_f">
+      <img src="img/00.gif"/><br/>
+      页面加载中...
+   </div>
+ </div>
+ <div class="dmgrecord">
+   <div class="dmgrecord-f">
+     <div class="dmgrecord-f-f">零钱宝预约记录</div>
+     <div class="dmgrecord-f-s">已预约</div>
+     <div class="dmgrecord-f-t"></div>
+   </div>
+   <div class="dmgrecord-s">
+     <img src="img/dmg/dmg021.png"/>
+     <div class="dmgrecord-s-f">
+       预约时间：<span>2018.03.27  14:00:02</span><br/>
+       预约产品：</span>366天 (14.88%+2%)</span>
+     </div>
+     <div class="dmgrecord-s-s chexiao" data-id="lqg01"></div><!-- 撤销 -->
+     <div class="dmgrecord-s-s xiright" data-id="lqg01"></div><!-- 修改 -->
+   </div>
+ </div>
+ <div class="dmgrecord">
+   <div class="dmgrecord-f">
+     <div class="dmgrecord-f-f">周周升预约记录</div>
+     <div class="dmgrecord-f-s">已预约</div>
+     <div class="dmgrecord-f-t"></div>
+   </div>
+   <div class="dmgrecord-s">
+     <img src="img/dmg/dmg022.png"/>
+     <div class="dmgrecord-s-f">
+       预约时间：<span>2018.03.27  14:00:02</span><br/>
+       预约产品：</span>366天 (14.88%+2%)</span>
+     </div>
+     <div class="dmgrecord-s-s chexiao" data-id="zhou01"></div><!-- 撤销 -->
+     <div class="dmgrecord-s-s xiright" data-id="zhou01"></div><!-- 修改 -->
+     <div class="dmgrecord-s-t"><!-- 未预约 -->
+       <img src="img/dmg/dmg023.png"/>
+     </div>
+   </div>
+ </div>
+ <div class="dmgrecords">
+   * 历史匹配周期为1~3天，以实际匹配为准。匹配成功前，利息按
+原投资发放。状态为匹配中和已匹配时不可撤销和修改。
+ </div>
+ <div class="dmgrecordt">
+   已匹配后，可在“我”-“我的投资”查看
+ </div>
+ <!-- 预约详情 -->
+ <div class="tanxq" id="tanUndo" style="padding-top:4.0rem;">
+   <div class="tanxq-f">
+     <div class="tanxq-f-f">
+       <img src="img/dmg/guan02.png"/>
+     </div>
+     <div class="tan-undo">最高加息2% 奖励确定不要？</div>
+     <div class="tan-undos">
+       <img src="img/dmg/dmg024.png"/>
+       <div class="tan-undos-f undoClose"></div><!-- 取消 -->
+       <div class="tan-undos-f undosRight"></div><!-- 确认 -->
+     </div>
+   </div>
+ </div>
+</body>
+<!-- 外部jskuangjia -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script>
+ ;(function($,window,document,undefined){
+    $(function(){
+    //var uid = '${uid}';
+    $.extend({
+           'refresh':function(){
+             window.location.reload();//刷新当前页面
+           }
+        });
+    $(".chexiao").click(function(){
+       var dataId = $(this).attr("data-id");
+       console.log(dataId);
+       $("#tanUndo").fadeIn(300);
+    });
+    $(".xiright").click(function(){
+       var dataId = $(this).attr("data-id");
+       console.log(dataId);
+       window.location.href = 'index.html';
+    });  
+    $(".undoClose").click(function(){
+       $(this).parent().parent().parent().fadeOut(300);
+    });
+    $(".dmgrecord-s-t").click(function(){
+       window.location.href = 'index.html';
+    });
+  });
+})(jQuery,window,document);
+
+ document.onreadystatechange = subSomething;//当页面加载状态改变的时候执行这个方法.
+ function subSomething() {
+  if(document.readyState=="complete"){
+   //alert("当前页面已加载完成！");
+   var a = document.getElementById("jiazai"); //当页面加载完成后获得该元素对象
+   a.style.display = "none"; 
+  }
+} 
+</script>
+</html>
